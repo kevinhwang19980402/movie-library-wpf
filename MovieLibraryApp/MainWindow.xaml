@@ -1,0 +1,140 @@
+﻿<Window x:Class="MovieLibraryApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MovieLibraryApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- MOVIE INPUT FIELDS + ADD BUTTON -->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0 0 0 10">
+            <StackPanel Margin="5">
+                <TextBlock Text="Movie ID"/>
+                <TextBox x:Name="MovieIdBox" Width="100"/>
+            </StackPanel>
+
+            <StackPanel Margin="5">
+                <TextBlock Text="Title"/>
+                <TextBox x:Name="TitleBox" Width="150"/>
+            </StackPanel>
+
+            <StackPanel Margin="5">
+                <TextBlock Text="Director"/>
+                <TextBox x:Name="DirectorBox" Width="150"/>
+            </StackPanel>
+
+            <StackPanel Margin="5">
+                <TextBlock Text="Genre"/>
+                <TextBox x:Name="GenreBox" Width="100"/>
+            </StackPanel>
+
+            <StackPanel Margin="5">
+                <TextBlock Text="Year"/>
+                <TextBox x:Name="YearBox" Width="80"/>
+            </StackPanel>
+
+            <Button Content="Add Movie"
+                Click="AddMovie_Click"
+                Margin="10 20 0 0"
+                Width="100"/>
+        </StackPanel>
+
+        <!-- SEARCH CONTROLS -->
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0 0 0 10">
+            <StackPanel Margin="5">
+                <TextBlock Text="Search Title"/>
+                <TextBox x:Name="SearchTitleBox" Width="150"/>
+
+
+            </StackPanel>
+
+            <Button Content="Search"
+                Click="SearchTitle_Click"
+                Margin="10 20 0 0"
+                Width="80"/>
+
+            <Button Content="Save JSON"
+                Click="SaveJson_Click"
+                Margin="10 20 0 0"
+                Width="68"/>
+
+            <Button Content="Load JSON"
+                Click="LoadJson_Click"
+                Margin="10 20 0 0"
+                Width="62"/>
+        </StackPanel>
+
+        <!-- BORROW / RETURN CONTROLS -->
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="0,0,0,10">
+
+            <StackPanel Width="143">
+                <TextBlock Text="Movie ID (Borrow/Return)" Margin="5 5 0 0" Height="15" Width="137"/>
+                <TextBox x:Name="BorrowReturnMovieIdBox" Width="125" Height="20" Margin="10 5 0 0"/>
+            </StackPanel>
+
+            <StackPanel Margin="5">
+                <TextBlock Text="User Name" Margin="5 0 0 0"/>
+                <TextBox x:Name="UserNameBox" Width="61" Height="19" RenderTransformOrigin="0.5,0.5" Margin="5 5 0 0">
+                    <TextBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.099"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </TextBox.RenderTransform>
+                </TextBox>
+            </StackPanel>
+            <Button Content="Borrow"
+                Click="Borrow_Click"
+                Width="54" Height="28" Margin ="5 15 0 0"/>
+
+            <Button Content="Return"
+                Click="Return_Click"
+                Margin="10 15 0 0"
+                Width="49" RenderTransformOrigin="0.515,0.198" Height="28"/>
+
+            <Button Content="Sort by Title"
+                Click="SortByTitle_Click"
+                Margin="10 15 0 0"
+                Width="67" Height="29"/>
+            <StackPanel Margin="0 5 0 0">
+                <TextBlock Text="Search by Movie ID" Margin="10 0 0 0"/>
+                <TextBox x:Name="SearchIdBox" Width="91" Height="21" Margin="10 2 0 0"/>
+            </StackPanel>
+            <Button Content="Search ID"
+        Click="SearchId_Click"
+        Width="75" Height="27" Margin="10 15 0 0"/>
+            <Button Content="Sort by Year"
+        Click="SortByYear_Click"
+        Width="82" Height="26" Margin="20 13 0 0"/>
+
+
+
+        </StackPanel>
+
+
+        <!-- MOVIE LIST -->
+        <ListView x:Name="MoviesListView" Grid.Row="3">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding MovieId}" Width="80"/>
+                    <GridViewColumn Header="Title" DisplayMemberBinding="{Binding Title}" Width="150"/>
+                    <GridViewColumn Header="Director" DisplayMemberBinding="{Binding Director}" Width="150"/>
+                    <GridViewColumn Header="Genre" DisplayMemberBinding="{Binding Genre}" Width="100"/>
+                    <GridViewColumn Header="Year" DisplayMemberBinding="{Binding ReleaseYear}" Width="80"/>
+                    <GridViewColumn Header="Available" DisplayMemberBinding="{Binding IsAvailable}" Width="80"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Window>

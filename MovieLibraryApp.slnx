@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MovieLibrary.Tests/MovieLibrary.Tests.csproj" Id="182fe246-b705-4953-8675-d1937a60808d" />
+  <Project Path="MovieLibraryApp/MovieLibraryApp.csproj" />
+</Solution>
