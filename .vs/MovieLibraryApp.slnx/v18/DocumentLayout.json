@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\bmx1u\\source\\repos\\MovieLibraryApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4DF4FA5E-3A2E-10A6-E56C-9F17A63A9100}|MovieLibraryApp\\MovieLibraryApp.csproj|c:\\users\\bmx1u\\source\\repos\\movielibraryapp\\movielibraryapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4DF4FA5E-3A2E-10A6-E56C-9F17A63A9100}|MovieLibraryApp\\MovieLibraryApp.csproj|solutionrelative:movielibraryapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4DF4FA5E-3A2E-10A6-E56C-9F17A63A9100}|MovieLibraryApp\\MovieLibraryApp.csproj|c:\\users\\bmx1u\\source\\repos\\movielibraryapp\\movielibraryapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DF4FA5E-3A2E-10A6-E56C-9F17A63A9100}|MovieLibraryApp\\MovieLibraryApp.csproj|solutionrelative:movielibraryapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DF4FA5E-3A2E-10A6-E56C-9F17A63A9100}|MovieLibraryApp\\MovieLibraryApp.csproj|c:\\users\\bmx1u\\source\\repos\\movielibraryapp\\movielibraryapp\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DF4FA5E-3A2E-10A6-E56C-9F17A63A9100}|MovieLibraryApp\\MovieLibraryApp.csproj|solutionrelative:movielibraryapp\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4DF4FA5E-3A2E-10A6-E56C-9F17A63A9100}|MovieLibraryApp\\MovieLibraryApp.csproj|c:\\users\\bmx1u\\source\\repos\\movielibraryapp\\movielibraryapp\\models\\movielibrarymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +13,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{182FE246-B705-4953-8675-D1937A60808D}|MovieLibrary.Tests\\MovieLibrary.Tests.csproj|c:\\users\\bmx1u\\source\\repos\\movielibraryapp\\movielibrary.tests\\movielibrarytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{182FE246-B705-4953-8675-D1937A60808D}|MovieLibrary.Tests\\MovieLibrary.Tests.csproj|solutionrelative:movielibrary.tests\\movielibrarytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DF4FA5E-3A2E-10A6-E56C-9F17A63A9100}|MovieLibraryApp\\MovieLibraryApp.csproj|c:\\users\\bmx1u\\source\\repos\\movielibraryapp\\movielibraryapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4DF4FA5E-3A2E-10A6-E56C-9F17A63A9100}|MovieLibraryApp\\MovieLibraryApp.csproj|solutionrelative:movielibraryapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DF4FA5E-3A2E-10A6-E56C-9F17A63A9100}|MovieLibraryApp\\MovieLibraryApp.csproj|c:\\users\\bmx1u\\source\\repos\\movielibraryapp\\movielibraryapp\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DF4FA5E-3A2E-10A6-E56C-9F17A63A9100}|MovieLibraryApp\\MovieLibraryApp.csproj|solutionrelative:movielibraryapp\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\bmx1u\\source\\repos\\MovieLibraryApp\\MovieLibraryApp\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MovieLibraryApp\\MainWindow.xaml",
@@ -46,7 +50,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "MovieLibraryTest.cs",
               "DocumentMoniker": "C:\\Users\\bmx1u\\source\\repos\\MovieLibraryApp\\MovieLibrary.Tests\\MovieLibraryTest.cs",
               "RelativeDocumentMoniker": "MovieLibrary.Tests\\MovieLibraryTest.cs",
@@ -59,20 +63,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MovieLibraryManager.cs",
               "DocumentMoniker": "C:\\Users\\bmx1u\\source\\repos\\MovieLibraryApp\\MovieLibraryApp\\Models\\MovieLibraryManager.cs",
               "RelativeDocumentMoniker": "MovieLibraryApp\\Models\\MovieLibraryManager.cs",
               "ToolTip": "C:\\Users\\bmx1u\\source\\repos\\MovieLibraryApp\\MovieLibraryApp\\Models\\MovieLibraryManager.cs",
               "RelativeToolTip": "MovieLibraryApp\\Models\\MovieLibraryManager.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAADwv5UAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwJUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T00:34:53.641Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Movie.cs",
               "DocumentMoniker": "C:\\Users\\bmx1u\\source\\repos\\MovieLibraryApp\\MovieLibraryApp\\Models\\Movie.cs",
               "RelativeDocumentMoniker": "MovieLibraryApp\\Models\\Movie.cs",
@@ -80,18 +84,17 @@
               "RelativeToolTip": "MovieLibraryApp\\Models\\Movie.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T00:32:19.942Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-08T00:32:19.942Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\bmx1u\\source\\repos\\MovieLibraryApp\\MovieLibraryApp\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MovieLibraryApp\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\bmx1u\\source\\repos\\MovieLibraryApp\\MovieLibraryApp\\MainWindow.xaml.cs",
               "RelativeToolTip": "MovieLibraryApp\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAtwEoAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAlwEQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T00:31:27.828Z",
               "EditorCaption": ""

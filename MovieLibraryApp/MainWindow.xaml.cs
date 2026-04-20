@@ -56,7 +56,7 @@ namespace MovieLibraryApp
             MoviesListView.ItemsSource = null;
             MoviesListView.ItemsSource = _library.GetAllMovies().ToList();
         }
-
+        // search title click user interface handler
         private void SearchTitle_Click(object sender, RoutedEventArgs e)
         {
             if(TitleBox.Text == null)
