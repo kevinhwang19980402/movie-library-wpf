@@ -108,7 +108,7 @@ namespace MovieLibraryApp.Models
             return $"{movie.Title} returned and is now available.";
         }
 
-        //sorting method by its movie ID 
+        //sorting method by its movie ID
         public List<Movie> SortById()
         {
             return _movies.OrderBy(m => m.MovieId).ToList();
@@ -141,7 +141,7 @@ namespace MovieLibraryApp.Models
             return null;
         }
 
-        //merge sort by year 
+        //merge sort by year
         public List<Movie> MergeSortByYear()
         {
             var list = _movies.ToList();

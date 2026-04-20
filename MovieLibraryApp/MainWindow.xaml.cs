@@ -106,7 +106,7 @@ namespace MovieLibraryApp
 
         }
 
-        //sort by title click button 
+        // sort by title click button
         private void SortByTitle_Click(object sender, RoutedEventArgs e)
         {
             if (!_library.GetAllMovies().Any())
@@ -140,7 +140,7 @@ namespace MovieLibraryApp
 
         }
 
-        //sort by year click button 
+        //sort by year click button
         private void SortByYear_Click(object sender, RoutedEventArgs e)
         {
             if (!_library.GetAllMovies().Any())
