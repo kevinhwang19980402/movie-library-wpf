@@ -42,6 +42,7 @@ namespace MovieLibraryApp.Models
             return null;
         }
 
+        //bubble sort by title
         public List<Movie> BubbleSortByTitle()
         {
             var list = _movies.ToList();
@@ -107,11 +108,13 @@ namespace MovieLibraryApp.Models
             return $"{movie.Title} returned and is now available.";
         }
 
+        //sorting method by its movie ID
         public List<Movie> SortById()
         {
             return _movies.OrderBy(m => m.MovieId).ToList();
         }
 
+        //binary search by ID
         public Movie BinarySearchById(string movieId)
         {
             var list = SortById(); // must be sorted first
@@ -138,6 +141,7 @@ namespace MovieLibraryApp.Models
             return null;
         }
 
+        //merge sort by year
         public List<Movie> MergeSortByYear()
         {
             var list = _movies.ToList();
