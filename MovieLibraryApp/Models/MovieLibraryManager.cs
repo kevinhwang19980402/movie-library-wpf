@@ -30,6 +30,8 @@ namespace MovieLibraryApp.Models
         {
             return _movies;
         }
+        
+        //Movie search by title method
         public Movie SearchByTitle(string title)
         {
             foreach (var movie in _movies)
