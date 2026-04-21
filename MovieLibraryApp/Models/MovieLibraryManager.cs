@@ -14,6 +14,7 @@ namespace MovieLibraryApp.Models
         private Dictionary<string, Movie> _movieById = new Dictionary<string, Movie>();
         private Dictionary<string, Queue<string>> _waitingLists = new Dictionary<string, Queue<string>>();
 
+        
         public void AddMovie(Movie movie)
         {
             // Handle duplicate ID later (for testing edge cases)
