@@ -77,7 +77,7 @@ namespace MovieLibraryApp
                 MessageBox.Show($"Found: {result.Title} ({result.ReleaseYear})");
             }
         }
-
+        // Borrow click button 
         private void Borrow_Click(object sender, RoutedEventArgs e)
         {
             if((BorrowReturnMovieIdBox.Text == null) || (UserNameBox.Text == null))
@@ -93,7 +93,7 @@ namespace MovieLibraryApp
             RefreshMovieList();
 
         }
-
+        // return click button 
         private void Return_Click(object sender, RoutedEventArgs e)
         {
             if((BorrowReturnMovieIdBox.Text == null))
