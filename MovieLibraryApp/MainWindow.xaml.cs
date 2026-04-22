@@ -108,7 +108,7 @@ namespace MovieLibraryApp
 
         }
 
-        // sort by title click button
+        // bubble sort title click button
         private void SortByTitle_Click(object sender, RoutedEventArgs e)
         {
             if (!_library.GetAllMovies().Any())
@@ -119,7 +119,7 @@ namespace MovieLibraryApp
             MoviesListView.ItemsSource = null;
             MoviesListView.ItemsSource = _library.BubbleSortByTitle();
         }
-
+        
         private void SearchId_Click(object sender, RoutedEventArgs e)
         {
             if(SearchIdBox.Text == null)
