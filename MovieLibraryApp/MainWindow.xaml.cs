@@ -72,6 +72,8 @@ namespace MovieLibraryApp
             }
             else
             {
+                MoviesListView.ItemsSource = null;
+                MoviesListView.ItemsSource = new List<Movie>() { result };
                 MessageBox.Show($"Found: {result.Title} ({result.ReleaseYear})");
             }
         }
