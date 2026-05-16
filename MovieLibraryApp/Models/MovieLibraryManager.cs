@@ -32,7 +32,7 @@ namespace MovieLibraryApp.Models
             return _movies;
         }
         
-        //Movie search by title method
+        //Movie search by title method (linear search)
         public Movie SearchByTitle(string title)
         {
             foreach (var movie in _movies)
