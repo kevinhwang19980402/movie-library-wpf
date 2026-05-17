@@ -51,6 +51,7 @@ namespace MovieLibraryApp
             _library.AddMovie(movie);
             RefreshMovieList();
         }
+        //refresh movie list box
         private void RefreshMovieList()
         {
             MoviesListView.ItemsSource = null;
